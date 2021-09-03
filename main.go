@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func mp() {
 	m := make(map[string]string)
@@ -19,6 +21,13 @@ func array() {
 	}
 }
 
+func sum(a int, b int) (int) {
+	sum := a+b;
+	return sum;
+}
+
+
 func main() {
-	mp()
+	sum := sum(2, 2)
+	fmt.Println("\nRESULT => Sum is =>", sum)
 }
