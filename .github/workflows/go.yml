@@ -29,7 +29,7 @@ jobs:
     steps:
     - uses: veracode/veracode-uploadandscan-action@master # Run the uploadandscan action. Inputs are described above.
       with:
-        filepath: 'veracodego.zip'
+        filepath: '\\/Users\\/victoria\\/go\\/src\\/cswgo\\/veracodego.zip'
         vid: '${{ secrets.VERACODE_API_ID }}'
         vkey: '${{ secrets.VERACODE_API_KEY }}'
 #        createsandbox: 'true'
