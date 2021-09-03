@@ -25,6 +25,8 @@ jobs:
       run: go test -v ./...
 
   veracode:
+    runs-on: ubuntu-latest
+    steps:
     - uses: veracode/veracode-uploadandscan-action@master # Run the uploadandscan action. Inputs are described above.
       with:
         filepath: 'cswgo/'
