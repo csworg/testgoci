@@ -41,7 +41,7 @@ jobs:
         uses: github/codeql-action/upload-sarif@v1
         with:
           # Path to SARIF file relative to the root of the repository
-          sarif_file: cw_results.sarif
+          sarif_file: csw_results.sarif
 
 #  veracode:
 #    runs-on: ubuntu-latest
