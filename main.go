@@ -33,7 +33,6 @@ func getTodos() []Todo {
 }
 
 func main() {
-	//tmpl := template.Must(template.ParseFiles("template/index.html"))
 	//tmpl := template.Must(template.ParseFiles("/Users/victoria/go/src/cswgo/template/index.html"))
 	tmpl, err := template.ParseFiles("/Users/victoria/go/src/cswgo/template/index.html")
 	if err != nil {
