@@ -15,7 +15,7 @@ type PageData struct {
 func main() {
 
 	tmpl := template.Must(template.ParseFiles("template/index.html"))
-	websitename := "cw-awesome-website"
+	websitename := "cw-website"
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 
