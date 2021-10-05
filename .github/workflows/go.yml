@@ -2,9 +2,9 @@ name: Go
 
 on:
   push:
-    branches: [ main, test-branch ]
+    branches: [ main ]
   pull_request:
-    branches: [ main, test-branch ]
+    branches: [ main ]
 
 jobs:
 
