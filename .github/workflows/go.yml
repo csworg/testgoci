@@ -1,9 +1,8 @@
 name: Go
 
-# adding comment for change
 on:
   push:
-    branches: [ main, test-branch ]
+    branches: [ main ]
   pull_request:
     branches: [ main ]
 
@@ -43,21 +42,6 @@ jobs:
         with:
           # Path to SARIF file relative to the root of the repository
           sarif_file: results.sarif
-
-#  veracode:
-#    runs-on: ubuntu-latest
-#    steps:
-#    - uses: veracode/veracode-uploadandscan-action@master # Run the uploadandscan action. Inputs are described above.
-#      with:
-#        filepath: './veracodego.zip'
-#        vid: '${{ secrets.VERACODE_API_ID }}'
-#        vkey: '${{ secrets.VERACODE_API_KEY }}'
-#        createsandbox: 'true'
-#        sandboxname: 'SANDBOXNAME'
-#        scantimeout: 15
-#        exclude: '*.js'
-#        include: '*.war'
-#        criticality: 'VeryHigh'
 
 
 
