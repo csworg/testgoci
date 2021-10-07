@@ -1,6 +1,5 @@
 name: Go
 
-# adding change
 on:
   push:
     branches: [ main ]
