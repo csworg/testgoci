@@ -1,11 +1,10 @@
-name: Go
+name: GoSec
 
-# adding comment for change
 on:
   push:
     branches: [ main, test-branch ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, test-branch ]
 
 jobs:
 
